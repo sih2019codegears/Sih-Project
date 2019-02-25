@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">coir coconut</string>
+    <string name="title_activity_farmer_home_screen">FarmerHomeScreenActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hello..</string>
+    <string name="nav_header_subtitle">hello@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_fourth_fragment">Settings</string>
+
+    <string name="help">In case of any query feel free to reach us at : \n    cvramandevelopers@gmail.com\n\nYou can also Call us at our helpline numbers : \n     +91-9291299399 \n     +91-8732888891</string>
+
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+
+</resources>

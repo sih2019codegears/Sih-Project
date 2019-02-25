@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coconut">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <Button
+        android:id="@+id/oval4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval"
+        android:text="Coconut Farm"
+        android:textColor="#4fbaf0"
+      />
+
+    <Button
+        android:id="@+id/oval3"
+        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oval2"
+
+        android:background="@drawable/oval"
+        android:text="Industry"
+        android:textColor="#4fbaf0"
+     />
+
+    <Button
+        android:id="@+id/oval2"
+        android:layout_width="200dp"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oval1"
+
+
+        android:background="@drawable/oval"
+        android:text="Customer"
+        android:textColor="#4fbaf0"
+       />
+
+    <Button
+        android:id="@+id/oval1"
+        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oval"
+
+        android:background="@drawable/oval"
+        android:text="Transportation"
+        android:textColor="#4fbaf0"
+       />
+
+    <Button
+        android:id="@+id/oval"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+
+        android:background="@drawable/oval"
+        android:text="Employee"
+        android:textColor="#4fbaf0"
+   />
+    </LinearLayout>
+
+</ScrollView>

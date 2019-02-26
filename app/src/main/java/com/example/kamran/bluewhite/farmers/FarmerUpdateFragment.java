@@ -25,7 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
  */
 public class FarmerUpdateFragment extends Fragment {
 
-    private DatabaseReference mRef;
+    private DatabaseReference mRef,mRef1;
     private FirebaseAuth mAuth;
     EditText qtyEditText,priceEditText;
     Button qtyUpdateButton,priceUpdateButton;
@@ -54,6 +54,7 @@ public class FarmerUpdateFragment extends Fragment {
 
        priceProgressBar=v.findViewById(R.id.priceProgressBar);
        mRef= FirebaseDatabase.getInstance().getReference();
+        mRef1= FirebaseDatabase.getInstance().getReference();
        mAuth=FirebaseAuth.getInstance();
        uid=mAuth.getCurrentUser().getUid();
 
@@ -70,8 +71,9 @@ public class FarmerUpdateFragment extends Fragment {
                        public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
 
                            qtyProgressBar.setVisibility(View.INVISIBLE);
-                           if(databaseError==null)
-                               Toast.makeText(getContext(),"Quantity updated!!",Toast.LENGTH_SHORT);
+                           if(databaseError==null) {
+                               Toast.makeText(getActivity(), "Quantity updated!!", Toast.LENGTH_SHORT);
+                           }
                            else
                                Toast.makeText(getContext(),"Quantity could not be updated!!",Toast.LENGTH_SHORT);
 
@@ -91,7 +93,7 @@ public class FarmerUpdateFragment extends Fragment {
                priceProgressBar.setVisibility(View.VISIBLE);
                if(!TextUtils.isEmpty(priceEditText.getText())) {
                    String price=String.valueOf(priceEditText.getText());
-                   mRef.child("farmer_quantity").child(uid).child("price").setValue(price, new DatabaseReference.CompletionListener() {
+                   mRef1.child("farmer_quantity").child(uid).child("price").setValue(price, new DatabaseReference.CompletionListener() {
                        @Override
                        public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
 

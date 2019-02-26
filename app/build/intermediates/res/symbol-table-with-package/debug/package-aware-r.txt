@@ -595,6 +595,7 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color backgroundColor
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -642,6 +643,7 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color drawerArrowColor
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -1027,6 +1029,8 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background
 drawable bag
+drawable border_fields
+drawable button_background
 drawable circleangle
 drawable coconut
 drawable coconut_rope
@@ -1254,10 +1258,14 @@ id passwdEditText
 id passwordEditText
 id percent
 id pin
+id priceProgressBar
 id product_menuitem
 id progressBar
 id progress_circular
 id progress_horizontal
+id qtyProgressBar
+id qtyUpdateButton
+id qtyUpdateEditText
 id radio
 id right
 id right_icon
@@ -1341,6 +1349,8 @@ id transition_transform
 id uniform
 id unlabeled
 id up
+id updatePriceButton
+id updatePriceEditText
 id update_menuitem
 id useLogo
 id usernameEditText

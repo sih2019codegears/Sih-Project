@@ -709,6 +709,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color tabIndicatorColor
 color tooltip_background_dark
 color tooltip_background_light
 dimen abc_action_bar_content_inset_material
@@ -923,6 +924,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1044,6 +1049,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable custom_nav_header
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1135,6 +1141,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id camera_preview
 id cancel_action
 id center
 id center_horizontal
@@ -1167,6 +1174,8 @@ id drawer_layout
 id eMailEditText
 id edit_query
 id emailEditText
+id email_header
+id employee_request_menuitem
 id end
 id end_padder
 id enterAlways
@@ -1187,6 +1196,7 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id home_menuitem
 id icon
 id icon_group
 id icon_only
@@ -1207,12 +1217,19 @@ id list_item
 id listview_background_shape
 id masked
 id media_actions
+id menu_developers
+id menu_logout
+id menu_profile
+id menu_reviews
+id menu_settings
 id message
 id middle
 id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name_header
+id navigation_drawer
 id navigation_header_container
 id never
 id none
@@ -1220,12 +1237,14 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id order_menuitem
 id outline
 id oval
 id oval1
 id oval2
 id oval3
 id oval4
+id overlay
 id packed
 id parallax
 id parent
@@ -1235,6 +1254,7 @@ id passwdEditText
 id passwordEditText
 id percent
 id pin
+id product_menuitem
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -1292,6 +1312,7 @@ id stretch
 id submenuarrow
 id submit_area
 id tabMode
+id tab_layout
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -1308,6 +1329,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1319,9 +1341,12 @@ id transition_transform
 id uniform
 id unlabeled
 id up
+id update_menuitem
 id useLogo
 id usernameEditText
+id videoView
 id view_offset_helper
+id view_pager
 id visible
 id wide
 id withText
@@ -1397,8 +1422,13 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_farmer_add_product
+layout fragment_farmer_home
+layout fragment_farmer_my_order
+layout fragment_farmer_update
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout navigation_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1418,6 +1448,8 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu farmer_bottom_navigation
+menu menu_items_farmer
 mipmap ic_launcher
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -1458,12 +1490,12 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string close
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -1485,35 +1517,26 @@ string common_signin_button_text_long
 string default_web_client_id
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string file_provider_authority
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-string help
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
-string nav_header_desc
-string nav_header_subtitle
-string nav_header_title
-string navigation_drawer_close
-string navigation_drawer_open
+string open
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string pref_default_display_name
-string pref_description_social_recommendations
-string pref_header_general
-string pref_title_display_name
-string pref_title_social_recommendations
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_farmer_home_screen
-string title_activity_fourth_fragment
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1715,6 +1738,8 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style MyAppTheme
+style MyToolbarTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -2097,3 +2122,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml file_provider_paths

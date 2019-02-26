@@ -224,6 +224,7 @@ public class signup extends AppCompatActivity
                 else{
                     mProgressBar.setVisibility(View.INVISIBLE);
                     Log.i("auth fail","else block");
+                    Log.i("reason",task.getException().toString());
                     Toast.makeText(signup.this,"Signup UnSuccessful",Toast.LENGTH_SHORT);
 
                 }

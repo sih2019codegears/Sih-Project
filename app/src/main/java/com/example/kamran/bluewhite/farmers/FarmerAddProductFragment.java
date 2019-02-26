@@ -1,14 +1,24 @@
 package com.example.kamran.bluewhite.farmers;
 
 
+import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.hardware.Camera;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -16,11 +26,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.kamran.bluewhite.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,11 +54,22 @@ import java.io.IOException;
 public class FarmerAddProductFragment extends Fragment {
 
 
-    private static final int IMAGE_SIZE =200 ;
-    private SurfaceView cameraPreview;
-    private RelativeLayout overlay;
-    static Camera camera = null;
-    SurfaceHolder surfaceHolder;
+
+    Uri uri;
+    String serverUri;
+    ImageView chooseFileImageView,uploadChosenFileImageView;
+
+    TextView chosenFileTextView;
+    TextView uploadChosenFileTextView;
+
+    DatabaseReference databaseReference,databaseReference1;
+    StorageReference storageReference;
+
+    ProgressDialog progressDialog;
+    int progresspercentage;
+
+    String uid;
+
 
     public FarmerAddProductFragment() {
         // Required empty public constructor
@@ -45,114 +82,183 @@ public class FarmerAddProductFragment extends Fragment {
                              Bundle savedInstanceState) {
 
 
-
 //        getActivity().requestWindowFeature(Window.FEATURE_NO_TITLE);
 //        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        View v= inflater.inflate(R.layout.fragment_farmer_add_product, container, false);
+        View v = inflater.inflate(R.layout.fragment_farmer_add_product, container, false);
+
+        uid= FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMax(100);
+        progressDialog.setMessage("Please wait....");
+        progressDialog.setTitle("Uploading Image");
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 
 
-        // Optional: Hide the status bar at the top of the window
+        chooseFileImageView = v.findViewById(R.id.choose_file_imageview);
 
-        // Set the content view and get references to our views
-        cameraPreview = (SurfaceView)v. findViewById(R.id.camera_preview);
-        overlay = (RelativeLayout) v.findViewById(R.id.overlay);
+        uploadChosenFileImageView = v.findViewById(R.id.upload_chosen_file_imageview);
 
-        surfaceHolder = cameraPreview.getHolder();
-      //  surfaceHolder.addCallback((SurfaceHolder.Callback)FarmerAddProductFragment.this);
-        surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+        uploadChosenFileTextView = v.findViewById(R.id.upload_chosen_file_textview);
 
-         camera = Camera.open();
+        chosenFileTextView = v.findViewById(R.id.chosen_file_textview);
 
-        Camera.PreviewCallback cameraPreviewCallback = new Camera.PreviewCallback() {
+
+
+
+        chooseFileImageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onPreviewFrame(byte[] data, Camera camera) {
+            public void onClick(View v) {
+
+
+                //For marshmellow the permission is already granted..
+                if (Build.VERSION.SDK_INT < 23) {
+                    chooseFile();
+
+                } else {
+                    //if sdk int>23 check for self permission
+
+                    if (ContextCompat.checkSelfPermission(getContext(), android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                        //if permission is not granted ask for permission
+
+                        ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+
+                    } else {
+                        chooseFile();
+                    }
+
+
+                }
 
             }
-        };
-
-        try {
-            camera.setPreviewCallback(cameraPreviewCallback);
-            camera.setPreviewDisplay(surfaceHolder);
-            camera.startPreview();
+        });
 
 
-        } catch (IOException e) {
-            e.printStackTrace();
+        // uploading process begins here ------------->>>>>>>>>
+
+
+        uploadChosenFileImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                progresspercentage=0;
+
+                if (uri != null) {
+
+                    File file = new File(uri.getPath());
+
+                    final String fileName = file.getName();
+                    String format[] = fileName.split("\\.");
+
+                    // Log.i("format", format.toString());
+                    final String fileFormat = format[format.length-1];
+
+
+
+                    progresspercentage=0;
+
+
+                    databaseReference = FirebaseDatabase.getInstance().getReference().child("farmer_files").child(uid).push();
+                    databaseReference.keepSynced(true);
+                    final String pushId = databaseReference.getKey();
+
+                    storageReference = FirebaseStorage.getInstance().getReference().child("farmer_files").child(uid).child(pushId);
+
+                    storageReference.putFile(uri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+
+                            if (task.isSuccessful()) {
+
+
+                                storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                    @Override
+                                    public void onSuccess(Uri uri1) {
+
+                                        HashMap<String, String> value = new HashMap<>();
+                                        value.put("pushId", pushId);
+                                        value.put("url", uri1.toString());
+                                        value.put("type", fileFormat);
+                                        value.put("name", fileName);
+
+
+                                        databaseReference.setValue(value).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task) {
+
+                                                if (task.isSuccessful()) {
+                                                    progressDialog.dismiss();
+
+                                                    Toast.makeText(getActivity(), "File Uploaded !", Toast.LENGTH_SHORT).show();
+
+                                                } else {
+
+                                                    progressDialog.dismiss();
+                                                    Toast.makeText(getActivity(), "File could not be uploaded !", Toast.LENGTH_SHORT).show();
+                                                }
+
+                                            }
+                                        });
+
+
+                                    }
+                                });
+
+                            } else {
+
+                                Toast.makeText(getActivity(), "File could not be uploaded !", Toast.LENGTH_SHORT).show();
+
+
+                            }
+                        }
+                    }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                            progresspercentage=0;
+                            progressDialog.show();
+                            progresspercentage = (int) ((int)(100.0 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount());
+                            progressDialog.incrementProgressBy(progresspercentage);
+                        }
+                    });
+
+
+                }
+            }
+        });
+        return v;
+    }
+
+    private void chooseFile() {
+
+        progresspercentage=0;
+
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("*/*");
+        startActivityForResult(intent,0);
+
+    }
+
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, final Intent data) {
+
+        if (requestCode == 0 && data != null) {
+
+            uri = data.getData();
+
+            Log.i("URI",String.valueOf(uri));
+            File file= new File(uri.getPath());
+            chosenFileTextView.setVisibility(View.VISIBLE);
+            chosenFileTextView.setText(file.getName());
+
+            uploadChosenFileTextView.setVisibility(View.VISIBLE);
+            uploadChosenFileImageView.setVisibility(View.VISIBLE);
+
         }
-
-//        Camera.Parameters camParams = camera.getParameters();
-
-//// Find a preview size that is at least the size of our IMAGE_SIZE
-//        Camera.Size previewSize = camParams.getSupportedPreviewSizes().get(0);
-//        for (Camera.Size size : camParams.getSupportedPreviewSizes()) {
-//            if (size.width >= IMAGE_SIZE && size.height >= IMAGE_SIZE) {
-//                previewSize = size;
-//                break;
-//            }
-//        }
-//        camParams.setPreviewSize(previewSize.width, previewSize.height);
-//
-//// Try to find the closest picture size to match the preview size.
-//        Camera.Size pictureSize = camParams.getSupportedPictureSizes().get(0);
-//        for (Camera.Size size : camParams.getSupportedPictureSizes()) {
-//            if (size.width == previewSize.width && size.height == previewSize.height) {
-//                pictureSize = size;
-//                break;
-//            }
-//        }
-//        camParams.setPictureSize(pictureSize.width, pictureSize.height);
-
-
-
-
-    return v;
     }
-
-
-    public void onWindowFocusChanged(boolean hasFocus) {
-
-        // Get the preview size
-        int previewWidth = cameraPreview.getMeasuredWidth(),
-                previewHeight = cameraPreview.getMeasuredHeight();
-
-        // Set the height of the overlay so that it makes the preview a square
-        RelativeLayout.LayoutParams overlayParams = (RelativeLayout.LayoutParams) overlay.getLayoutParams();
-        overlayParams.height = previewHeight - previewWidth;
-        overlay.setLayoutParams(overlayParams);
-    }
-
-    private Bitmap processImage(byte[] data) throws IOException {
-        // Determine the width/height of the image
-        int width = camera.getParameters().getPictureSize().width;
-        int height = camera.getParameters().getPictureSize().height;
-
-        // Load the bitmap from the byte array
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inPreferredConfig = Bitmap.Config.ARGB_8888;
-        Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length, options);
-
-        // Rotate and crop the image into a square
-        int croppedWidth = (width > height) ? height : width;
-        int croppedHeight = (width > height) ? height : width;
-
-        Matrix matrix = new Matrix();
-       // matrix.postRotate(IMAGE_ORIENTATION);
-        Bitmap cropped = Bitmap.createBitmap(bitmap, 0, 0, croppedWidth, croppedHeight, matrix, true);
-        bitmap.recycle();
-
-        // Scale down to the output size
-        Bitmap scaledBitmap = Bitmap.createScaledBitmap(cropped, IMAGE_SIZE, IMAGE_SIZE, true);
-        cropped.recycle();
-
-        return scaledBitmap;
-    }
-
-//    public CameraView(Context ctx, AttributeSet attrSet) {
-//        super(ctx, attrSet);
-////        getHolder().addCallback(cameraPreviewCallback);
-////        getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
-//    }
 
 
 }

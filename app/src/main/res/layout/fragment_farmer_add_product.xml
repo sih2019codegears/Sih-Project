@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".farmers.FarmerAddProductFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!-- Camera Preview -->
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!-- /End Camera Preview -->
+
+    <!-- Overlay -->
+    <RelativeLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <!--- Put your Content Here -->
+
+    </RelativeLayout>
+    <!-- /End Overlay -->
+
+</FrameLayout>

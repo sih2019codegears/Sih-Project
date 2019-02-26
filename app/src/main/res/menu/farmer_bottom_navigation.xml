@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_menuitem"
+        android:title="Home"
+        android:checkable="true"/>
+
+    <item
+        android:title="Add Product"
+        android:checkable="true"
+        android:id="@+id/product_menuitem"
+        />
+
+    <item
+        android:title="Update"
+        android:checkable="true"
+        android:id="@+id/update_menuitem"
+        />
+
+    <item
+        android:title="My Orders"
+        android:checkable="true"
+        android:id="@+id/order_menuitem"
+        />
+    <item
+        android:title="Employee Request"
+        android:checkable="true"
+        android:id="@+id/employee_request_menuitem"
+        />
+
+
+</menu>

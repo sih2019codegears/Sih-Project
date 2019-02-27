@@ -1432,6 +1432,8 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_employee_home
+layout fragment_employee_req_product
 layout fragment_farmer_add_product
 layout fragment_farmer_home
 layout fragment_farmer_my_order

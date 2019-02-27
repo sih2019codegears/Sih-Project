@@ -20,6 +20,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -31,6 +33,8 @@ public class FarmerUpdateFragment extends Fragment {
     Button qtyUpdateButton,priceUpdateButton;
     ProgressBar qtyProgressBar,priceProgressBar;
     String uid;
+
+    HashMap<String,String> hashMap;
 
     public FarmerUpdateFragment() {
         // Required empty public constructor
@@ -76,9 +80,6 @@ public class FarmerUpdateFragment extends Fragment {
                            }
                            else
                                Toast.makeText(getContext(),"Quantity could not be updated!!",Toast.LENGTH_SHORT);
-
-
-
                        }
                    });
 
@@ -102,20 +103,11 @@ public class FarmerUpdateFragment extends Fragment {
                                Toast.makeText(getContext(), "Price updated successfully!!", Toast.LENGTH_SHORT).show();
                            else
                                Toast.makeText(getContext(), "Price could not be updated!!", Toast.LENGTH_SHORT).show();
-
-
                        }
                    });
-
-
                }
            }
        });
-
-
-
-
        return v;
     }
-
 }

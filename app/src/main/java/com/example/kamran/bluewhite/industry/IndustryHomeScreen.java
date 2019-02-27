@@ -88,10 +88,10 @@ public class IndustryHomeScreen extends AppCompatActivity
             drawerLayout.addDrawerListener(drawerToggle);
             drawerToggle.syncState();
 
-            final IndustryAddProductFargment farmerAddProductFragment = new IndustryAddProductFargment();
+            final IndustryAddProductFragment farmerAddProductFragment = new IndustryAddProductFragment();
             final IndustryHomeFragment farmerHomeFragment = new IndustryHomeFragment();
-            final IndustryMyOrderFargment farmerMyOrderFragment  =new IndustryMyOrderFargment();
-            final IndustryUpdateFargment farmerUpdateFragment = new IndustryUpdateFargment();
+            final IndustryMyOrderFragment farmerMyOrderFragment  =new IndustryMyOrderFragment();
+            final IndustryUpdateFragment farmerUpdateFragment = new IndustryUpdateFragment();
         }
 
 

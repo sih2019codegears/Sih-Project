@@ -5,8 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.kamran.bluewhite.farmers.FarmerAddProductFragment;
-import com.example.kamran.bluewhite.farmers.FarmerHomeFragment;
 import com.example.kamran.bluewhite.farmers.FarmerMyOrderFragment;
 import com.example.kamran.bluewhite.farmers.FarmerUpdateFragment;
 
@@ -21,15 +19,18 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
         switch(i)
         {
             case 0:
-                return new FarmerHomeFragment();
+                return new IndustryHomeFragment();
             case 1:
-                return new FarmerAddProductFragment();
+                return new IndustryAddProductFragment();
 
             case 2:
-                return new FarmerUpdateFragment();
+                return new IndustryUpdateFragment();
 
             case 3:
-                return new FarmerMyOrderFragment();
+                return new IndustryMyOrderFragment();
+
+            case 4:
+                return new IndustryOrderGivenFragment();
 
         }
 
@@ -39,7 +40,7 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 5;
     }
 
 
@@ -57,7 +58,9 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
             case 2:
                 return "Update";
             case 3:
-                return "My Orders";
+                return "Farmers";
+            case 4:
+                return "Order Status";
         }
         return null;
 

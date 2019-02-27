@@ -63,6 +63,7 @@ import com.google.firebase.storage.UploadTask;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -340,6 +341,7 @@ public class FarmerAddProductFragment extends Fragment {
 
                             Picasso.get()
                                     .load(url)
+                                    .networkPolicy(NetworkPolicy.OFFLINE)
                                     //.resize(getActivity().getWindowManager().getDefaultDisplay().getWidth(), 400)
                                     //.centerCrop()
                                     .into(holder.imageView);
@@ -359,13 +361,15 @@ public class FarmerAddProductFragment extends Fragment {
                     };
 
 
-                    recyclerView.setAdapter(firebaseRecyclerAdapter);
+
 
 
                 } else {
                     Toast.makeText(getContext(), "No files for this unit.", Toast.LENGTH_SHORT).show();
 
                 }
+
+                recyclerView.setAdapter(firebaseRecyclerAdapter);
 
             }
 
@@ -374,6 +378,7 @@ public class FarmerAddProductFragment extends Fragment {
 
             }
         });
+
 
     }
 

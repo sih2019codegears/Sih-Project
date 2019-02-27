@@ -5,5 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="tabIndicatorColor">#1230F3</color>
     <color name="drawerArrowColor">@android:color/white</color>
-    <color name="backgroundColor">#dddcdb</color>
+    <color name="backgroundColor">#F5F4F4</color>
 </resources>

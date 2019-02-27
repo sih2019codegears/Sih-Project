@@ -120,6 +120,7 @@ public class signin extends AppCompatActivity {
                                         editor=prefs.edit();
 
                                         editor.putString("category",category);
+                                        Log.i("category",category);
                                         editor.putString("email",email);
                                         editor.putString("fullname",fullname);
                                         editor.putString("username",username);

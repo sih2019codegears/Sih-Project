@@ -42,6 +42,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.kamran.bluewhite.MoneyTransferActivity" />
+        <activity android:name="com.example.kamran.bluewhite.industry.ViewPhotosActivity" />
         <activity android:name="com.example.kamran.bluewhite.Employee.EmployeeHomeScreen" />
         <activity android:name="com.example.kamran.bluewhite.customer.CustomerHomeScreen" />
         <activity android:name="com.example.kamran.bluewhite.industry.IndustryHomeScreen" />

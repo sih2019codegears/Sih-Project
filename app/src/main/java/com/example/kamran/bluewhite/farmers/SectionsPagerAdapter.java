@@ -45,14 +45,12 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
             case 0:
                 return "Home";
-
-
             case 1:
                 return "Add Product";
             case 2:
                 return "Update";
             case 3:
-                return "My Orders";
+                return "Order Received";
         }
         return null;
 

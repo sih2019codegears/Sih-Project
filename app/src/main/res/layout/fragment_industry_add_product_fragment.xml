@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".industry.IndustryAddProductFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/document_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Click below to choose a file ->"
+            android:textStyle="normal"
+            android:textColor="@android:color/background_dark"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/choose_file_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:src="@drawable/documentchooseimage" />
+
+        <TextView
+            android:id="@+id/chosen_file_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Selected File  : "
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+
+            android:padding="10dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/upload_chosen_file_textview"
+            android:visibility="invisible"
+            android:layout_margin="1dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="Upload"
+            />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Click below to choose your category -"
+            android:textStyle="normal"
+            android:textColor="@android:color/background_dark"
+            android:gravity="center"/>
+
+        <Spinner
+            android:layout_marginTop="15dp"
+            android:id="@+id/mSpinner"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="50dp">
+
+        </Spinner>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Write below the price of your object -"
+            android:textStyle="normal"
+            android:textColor="@android:color/background_dark"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_marginTop="20dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:layout_gravity="center"/>
+
+
+
+        <ImageView
+            android:id="@+id/upload_chosen_file_imageview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/upload_chosen_file"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</FrameLayout>

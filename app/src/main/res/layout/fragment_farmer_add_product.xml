@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".farmers.FarmerAddProductFragment">
 
+<<<<<<< HEAD
     <!-- TODO: Update blank fragment layout -->
 
 
@@ -27,5 +28,77 @@
 
     </RelativeLayout>
     <!-- /End Overlay -->
+=======
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/document_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:text="Click below to choose a file ->"
+        android:textStyle="normal"
+        android:textColor="@android:color/background_dark"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/choose_file_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:src="@drawable/documentchooseimage" />
+
+    <TextView
+        android:id="@+id/chosen_file_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selected File  : "
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+
+        android:padding="10dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/upload_chosen_file_textview"
+        android:visibility="invisible"
+        android:layout_margin="1dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="Upload"
+        />
+
+    <ImageView
+        android:id="@+id/upload_chosen_file_imageview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/upload_chosen_file"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>
+
+>>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 
 </FrameLayout>

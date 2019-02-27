@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\AVINASH ACHARYA\\Sih-Project-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
                     "source": "C:\\Users\\AVINASH ACHARYA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c312223dc52123a7e273672d6e2a7784\\res\\values-v16\\values-v16.xml",
+=======
+            "outputFile": "C:\\Users\\SUJIT\\AndroidStudioProjects\\Blue_White\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SUJIT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\63fb5f971e2d619e10a33805221b3ebf\\res\\values-v16\\values-v16.xml",
+>>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +30,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\AVINASH ACHARYA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\1d4247c55be50efc54e098b2e6a54eb5\\res\\values-v16\\values-v16.xml",
+=======
+                    "source": "C:\\Users\\SUJIT\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\b2df053b60366006d71267bbc7be52c5\\res\\values-v16\\values-v16.xml",
+>>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -25,8 +25,10 @@ import com.example.kamran.bluewhite.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.example.kamran.bluewhite.*;
 
+
 public class FarmerHomeScreen extends AppCompatActivity
                               implements NavigationView.OnNavigationItemSelectedListener{
+
 
     NavigationView navigationView;
     DrawerLayout drawerLayout;
@@ -44,8 +46,8 @@ public class FarmerHomeScreen extends AppCompatActivity
     BottomNavigationView bottomNavigationView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_farmer_home_screen);
 

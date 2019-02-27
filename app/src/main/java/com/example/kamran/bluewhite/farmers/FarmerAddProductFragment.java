@@ -3,13 +3,8 @@ package com.example.kamran.bluewhite.farmers;
 
 import android.Manifest;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
-import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,18 +12,14 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
-import android.util.AttributeSet;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,15 +28,22 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.squareup.picasso.Picasso;
+
 import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 
 /**
@@ -70,6 +68,12 @@ public class FarmerAddProductFragment extends Fragment {
 
     String uid;
 
+    RecyclerView recyclerView;
+
+    private FirebaseRecyclerAdapter<ImageFile, FarmerAddProductFragment.ViewHolder> firebaseRecyclerAdapter;
+    private FirebaseRecyclerOptions<ImageFile> options;
+    private Query query;
+
 
     public FarmerAddProductFragment() {
         // Required empty public constructor
@@ -88,6 +92,7 @@ public class FarmerAddProductFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_farmer_add_product, container, false);
 
         uid= FirebaseAuth.getInstance().getCurrentUser().getUid();
+        recyclerView=v.findViewById(R.id.recycler_view);
 
         progressDialog = new ProgressDialog(getContext());
         progressDialog.setMax(100);
@@ -103,6 +108,8 @@ public class FarmerAddProductFragment extends Fragment {
         uploadChosenFileTextView = v.findViewById(R.id.upload_chosen_file_textview);
 
         chosenFileTextView = v.findViewById(R.id.chosen_file_textview);
+
+        permission_check();
 
 
 
@@ -241,6 +248,20 @@ public class FarmerAddProductFragment extends Fragment {
     }
 
 
+    private void permission_check() {
+        if(ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},100);
+
+            }
+        }
+
+        initialize();
+    }
+
+
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, final Intent data) {
@@ -261,4 +282,86 @@ public class FarmerAddProductFragment extends Fragment {
     }
 
 
-}
+    public void initialize() {
+
+        recyclerView.hasFixedSize();
+           recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        query = FirebaseDatabase.getInstance()
+                .getReference().child("farmer_files").child(uid);
+
+        query.keepSynced(true);
+
+        options = new FirebaseRecyclerOptions.Builder<ImageFile>()
+                .setQuery(query, ImageFile.class).setLifecycleOwner(this)
+                .build();
+
+
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                if (dataSnapshot.exists()) {
+
+
+                    firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<ImageFile, FarmerAddProductFragment.ViewHolder>(options) {
+
+
+                        @Override
+                        protected void onBindViewHolder(@NonNull FarmerAddProductFragment.ViewHolder holder, int position, @NonNull ImageFile model) {
+
+                            String url=model.getUrl();
+
+                            Picasso.get()
+                                    .load(url)
+                                    //.resize(getActivity().getWindowManager().getDefaultDisplay().getWidth(), 400)
+                                    //.centerCrop()
+                                    .into(holder.imageView);
+
+
+
+                        }
+                        @NonNull
+                        @Override
+                        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+                            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.individual_image_layout, parent, false);
+                            ViewHolder holder = new ViewHolder(view);
+                            return holder;
+
+                        }
+                    };
+
+
+                    recyclerView.setAdapter(firebaseRecyclerAdapter);
+
+
+                } else {
+                    Toast.makeText(getContext(), "No files for this unit.", Toast.LENGTH_SHORT).show();
+
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
+        public static  class ViewHolder  extends RecyclerView.ViewHolder{
+
+            View itemView;
+            ImageView imageView;
+            public ViewHolder(View mview) {
+                super(mview);
+                itemView = mview;
+                imageView=itemView.findViewById(R.id.individual_image);
+
+            }
+        }
+
+
+    }

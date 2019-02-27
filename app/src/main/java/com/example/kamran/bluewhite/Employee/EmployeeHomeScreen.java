@@ -24,8 +24,7 @@ import com.example.kamran.bluewhite.main;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class EmployeeHomeScreen extends AppCompatActivity
-                                 implements NavigationView.OnNavigationItemSelectedListener
-{
+                                 implements NavigationView.OnNavigationItemSelectedListener {
 
     NavigationView navigationView;
     DrawerLayout drawerLayout;
@@ -40,16 +39,15 @@ public class EmployeeHomeScreen extends AppCompatActivity
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_home_screen);
 
-        mAuth=FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
-        prefs=getSharedPreferences("com.example.kamran.bluewhite", Context.MODE_PRIVATE);
+        prefs = getSharedPreferences("com.example.kamran.bluewhite", Context.MODE_PRIVATE);
 
-        navigationView =findViewById(R.id.navigation_drawer);
+        navigationView = findViewById(R.id.navigation_drawer);
         navigationView.setNavigationItemSelectedListener(this);
 
         toolbar = findViewById(R.id.toolbar);
@@ -63,13 +61,13 @@ public class EmployeeHomeScreen extends AppCompatActivity
 
         View headerView = navigationView.getHeaderView(0);
 
-        TextView headerName=headerView.findViewById(R.id.name_header);
+        TextView headerName = headerView.findViewById(R.id.name_header);
         TextView headerEmail = headerView.findViewById(R.id.email_header);
-        String headername=prefs.getString("username","");
+        String headername = prefs.getString("username", "");
         headerName.setText(headername);
-        Log.i("header name",headername);
-        headerEmail.setText(prefs.getString("email",""));
-        drawerLayout =findViewById(R.id.drawer_layout);
+        Log.i("header name", headername);
+        headerEmail.setText(prefs.getString("email", ""));
+        drawerLayout = findViewById(R.id.drawer_layout);
 
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -85,7 +83,7 @@ public class EmployeeHomeScreen extends AppCompatActivity
         });
 
 
-        ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close);
+        ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
 
@@ -93,10 +91,6 @@ public class EmployeeHomeScreen extends AppCompatActivity
 //        final FarmerHomeFragment farmerHomeFragment = new FarmerHomeFragment();
 //        final FarmerMyOrderFragment farmerMyOrderFragment  =new FarmerMyOrderFragment();
 //        final FarmerUpdateFragment farmerUpdateFragment = new FarmerUpdateFragment();
-
-
-
-
 
 
     }
@@ -107,12 +101,12 @@ public class EmployeeHomeScreen extends AppCompatActivity
 
         drawerClose();
 
-        switch(menuItem.getItemId()) {
+        switch (menuItem.getItemId()) {
 
             case R.id.menu_logout:
                 mAuth.signOut();
                 Intent intent = new Intent(EmployeeHomeScreen.this, main.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 finish();
                 return true;
@@ -124,9 +118,7 @@ public class EmployeeHomeScreen extends AppCompatActivity
 
     }
 
-    public void drawerClose()
-
-    {
+    public void drawerClose() {
 
         drawerLayout.closeDrawer(GravityCompat.START);
     }
@@ -134,9 +126,10 @@ public class EmployeeHomeScreen extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+        if (drawerLayout.isDrawerOpen(GravityCompat.START))
             drawerClose();
         else
             super.onBackPressed();
 
+    }
 }

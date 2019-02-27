@@ -1,7 +1,7 @@
 package com.example.kamran.bluewhite.farmers;
 
 
-<<<<<<< HEAD
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -115,10 +115,6 @@ public class FarmerAddProductFragment extends Fragment {
 
 
 
-        return v;
-
-    }
-}
 
 
         uid= FirebaseAuth.getInstance().getCurrentUser().getUid();

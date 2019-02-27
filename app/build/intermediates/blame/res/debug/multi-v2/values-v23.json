@@ -1,28 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\AVINASH ACHARYA\\Sih-Project-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\AVINASH ACHARYA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c312223dc52123a7e273672d6e2a7784\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,19,32,33,34,35,36",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,190,325,400,487,1277,2079,2206,2311,2426,2533",
-                        "endLines": "2,3,4,5,18,31,32,33,34,35,36",
-                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
-                        "endOffsets": "185,320,395,482,1272,2074,2201,2306,2421,2528,2641"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\AVINASH ACHARYA\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\f1759e132ce49e635e3f3edd9431fc25\\res\\values-v23\\values-v23.xml",
-=======
             "outputFile": "C:\\Users\\SUJIT\\AndroidStudioProjects\\Blue_White\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\SUJIT\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\2a2cd8e3e394016640a4cb213230aef2\\res\\values-v23\\values-v23.xml",
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -39,8 +21,6 @@
                         "endColumns": "12",
                         "endOffsets": "2791"
                     }
-<<<<<<< HEAD
-=======
                 },
                 {
                     "source": "C:\\Users\\SUJIT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\63fb5f971e2d619e10a33805221b3ebf\\res\\values-v23\\values-v23.xml",
@@ -52,7 +32,6 @@
                         "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
                         "endOffsets": "185,320,395,482,1272,2074,2201,2306,2421,2528,2641"
                     }
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
                 }
             ]
         }

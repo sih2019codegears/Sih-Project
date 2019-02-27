@@ -224,14 +224,12 @@ public class signup extends AppCompatActivity
                 else{
                     mProgressBar.setVisibility(View.INVISIBLE);
                     Log.i("auth fail","else block");
-<<<<<<< HEAD
-=======
+
                     Log.i("reason",task.getException().toString());
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
+
                     Toast.makeText(signup.this,"Signup UnSuccessful",Toast.LENGTH_SHORT);
 
                 }
-
             }
         });
     }

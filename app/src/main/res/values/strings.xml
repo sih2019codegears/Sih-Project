@@ -7,6 +7,17 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
 
+
+    <string name="my_profile">My Profile</string>
+    <string name="my_account">My Account</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="item_5">My Orders</string>
+
+    <string name="help_support">Help \u0026 Support</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

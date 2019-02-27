@@ -3,13 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar!/" />
     </CLASSES>
-<<<<<<< HEAD
     <JAVADOC />
-=======
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/1064ee6b28b926dfa355f9db146a33d1111a7bf1/javax.annotation-api-1.2-javadoc.jar!/" />
-    </JAVADOC>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/ad18a02db08eaee697f812e333f692fc51129e4a/javax.annotation-api-1.2-sources.jar!/" />
     </SOURCES>

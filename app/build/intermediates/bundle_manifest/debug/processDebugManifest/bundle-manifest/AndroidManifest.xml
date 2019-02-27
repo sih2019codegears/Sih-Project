@@ -18,9 +18,6 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14"/> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
@@ -155,14 +152,11 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-<<<<<<< HEAD
-=======
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
             android:authorities="com.example.kamran.bluewhite.com.squareup.picasso"
             android:exported="false" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
     </application>
 
 </manifest>

@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "C:\\Users\\AVINASH ACHARYA\\Sih-Project-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\AVINASH ACHARYA\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f294b69acaf853af22970ee0c5276cd5\\res\\values-large-v4\\values-large-v4.xml",
-=======
-            "outputFile": "C:\\Users\\SUJIT\\AndroidStudioProjects\\Blue_White\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\SUJIT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\63fb5f971e2d619e10a33805221b3ebf\\res\\values-large-v4\\values-large-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,185,256,326,396,464,532,636",
-                        "endColumns": "58,70,70,69,69,67,67,103,115",
-                        "endOffsets": "109,180,251,321,391,459,527,631,747"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\SUJIT\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f8c20ac198d796280b511dcdcfc1066e\\res\\values-large-v4\\values-large-v4.xml",
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -36,7 +19,6 @@
                         "endColumns": "121,133",
                         "endOffsets": "869,1003"
                     }
-<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\AVINASH ACHARYA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\c312223dc52123a7e273672d6e2a7784\\res\\values-large-v4\\values-large-v4.xml",
@@ -47,8 +29,6 @@
                         "endColumns": "58,70,70,69,69,67,67,103,115",
                         "endOffsets": "109,180,251,321,391,459,527,631,747"
                     }
-=======
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
                 }
             ]
         }

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ef2a26c75a02df4e2647483708539157\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f294b69acaf853af22970ee0c5276cd5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.firebaseui:firebase-ui-database:3.3.1] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-3.3.1.aar\a445d31192a6353b1473e51797522392\AndroidManifest.xml:2:1-13:12
@@ -63,20 +63,20 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\AVINASH ACHARYA\.gr
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\45cb1939572932ca3648a6367d3c4398\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a6b7524f598dd68730197ae73d5c77fe\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\faf7659fb34fa1094616da70d7d480f6\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
 	package
 		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
 		INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:1-62:12
 		INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:2:11-69
@@ -85,23 +85,23 @@ ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManif
 	android:name
 		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:5:22-62
 uses-feature#android.hardware.camera
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:6:5-60
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:7:5-60
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:6:19-57
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:7:19-57
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:7:22-77
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:9:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:10:22-78
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:9:5-70
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:12:5-70
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:9:19-67
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:12:19-67
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:14:5-67
 MERGED from [com.firebaseui:firebase-ui-database:3.3.1] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-3.3.1.aar\a445d31192a6353b1473e51797522392\AndroidManifest.xml:11:5-67
 MERGED from [com.firebaseui:firebase-ui-database:3.3.1] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-3.3.1.aar\a445d31192a6353b1473e51797522392\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\44a3d994972e578b3ebe0b63ea833b85\AndroidManifest.xml:22:5-67
@@ -117,9 +117,9 @@ MERGED from [com.google.firebase:firebase-database-connection:16.0.1] C:\Users\A
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-16.0.1.aar\ec766349c7b55d74c8556986ce98a9f3\AndroidManifest.xml:8:5-67
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-16.0.1.aar\ec766349c7b55d74c8556986ce98a9f3\AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:11:22-64
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:14:22-64
 application
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:13:5-49:19
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:16:5-60:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ef2a26c75a02df4e2647483708539157\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ef2a26c75a02df4e2647483708539157\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f294b69acaf853af22970ee0c5276cd5\AndroidManifest.xml:22:5-20
@@ -165,79 +165,83 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Us
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\AVINASH ACHARYA\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\1d4247c55be50efc54e098b2e6a54eb5\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:19:9-41
 	android:icon
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:18:9-40
-activity#com.example.kamran.bluewhite.Employee.EmployeeHomeScreen
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:19:9-74
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:21:9-40
+activity#com.example.kamran.bluewhite.SplashScreen
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:19:19-62
-activity#com.example.kamran.bluewhite.customer.CustomerHomeScreen
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:20:9-65
-	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:20:19-62
-activity#com.example.kamran.bluewhite.industry.IndustryHomeScreen
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:21:9-65
-	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:21:19-62
-activity#com.example.kamran.bluewhite.farmers.FarmerHomeScreen
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:22:9-62
-	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:22:19-59
-activity#com.example.kamran.bluewhite.main
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:23:9-29:20
-	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:23:19-39
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:22:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:26:27-74
+activity#com.example.kamran.bluewhite.Employee.EmployeeHomeScreen
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:29:9-65
+	android:name
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:29:19-62
+activity#com.example.kamran.bluewhite.customer.CustomerHomeScreen
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:30:9-65
+	android:name
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:30:19-62
+activity#com.example.kamran.bluewhite.industry.IndustryHomeScreen
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:31:9-65
+	android:name
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:31:19-62
+activity#com.example.kamran.bluewhite.farmers.FarmerHomeScreen
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:32:9-62
+	android:name
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:32:19-59
+activity#com.example.kamran.bluewhite.main
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:33:9-39:20
+	android:name
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:33:19-39
 provider#android.support.v4.content.FileProvider
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:31:9-39:20
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:41:9-49:20
 	android:grantUriPermissions
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:35:13-47
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:45:13-47
 	android:authorities
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:33:13-66
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:43:13-66
 	android:exported
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:32:13-67
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:42:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:36:13-38:63
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:46:13-48:63
 	android:resource
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:38:17-60
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:48:17-60
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:37:17-67
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:47:17-67
 activity#com.example.kamran.bluewhite.signin
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:40:9-42:50
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:51:9-53:50
 	android:parentActivityName
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:42:13-47
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:53:13-47
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:41:13-35
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:52:13-35
 activity#com.example.kamran.bluewhite.signup
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:43:9-45:54
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:54:9-56:54
 	android:parentActivityName
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:45:13-51
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:56:13-51
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:44:13-35
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:55:13-35
 activity#com.example.kamran.bluewhite.category
-ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:46:9-48:50
+ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:57:9-59:50
 	android:parentActivityName
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:48:13-47
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:59:13-47
 	android:name
-		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:47:13-37
+		ADDED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml:58:13-37
 uses-sdk
 INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\AVINASH ACHARYA\Sih-Project-master\app\src\main\AndroidManifest.xml

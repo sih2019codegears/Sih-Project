@@ -1022,10 +1022,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-<<<<<<< HEAD
-=======
 drawable activity_file_upload
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 drawable add
 drawable angle
 drawable angle2
@@ -1064,10 +1061,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-<<<<<<< HEAD
-=======
 drawable documentchooseimage
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 drawable employee
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1112,10 +1106,7 @@ drawable timg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable update
-<<<<<<< HEAD
-=======
 drawable upload_chosen_file
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 drawable user
 id ALT
 id CTRL
@@ -1157,21 +1148,14 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
-<<<<<<< HEAD
-id camera_preview
-=======
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 id cancel_action
 id center
 id center_horizontal
 id center_vertical
 id chains
 id checkbox
-<<<<<<< HEAD
-=======
 id choose_file_imageview
 id chosen_file_textview
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 id chronometer
 id circle
 id clip_horizontal
@@ -1180,6 +1164,7 @@ id collapseActionView
 id container
 id content
 id contentPanel
+id content_main
 id coordinator
 id custom
 id customPanel
@@ -1194,12 +1179,9 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
-<<<<<<< HEAD
-=======
 id document_name_textview
 id downloadSheetButtonLab
 id downloadSheetButtonTheory
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 id drawer_layout
 id eMailEditText
 id edit_query
@@ -1232,20 +1214,14 @@ id icon_group
 id icon_only
 id ifRoom
 id image
-<<<<<<< HEAD
-=======
 id individual_image
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
-<<<<<<< HEAD
-=======
 id launch_study_material
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 id left
 id light
 id line1
@@ -1266,7 +1242,12 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id my_account
+id my_cart
+id my_orders
+id my_wishlist
 id name_header
+id nav_view
 id navigation_drawer
 id navigation_header_container
 id never
@@ -1282,10 +1263,6 @@ id oval1
 id oval2
 id oval3
 id oval4
-<<<<<<< HEAD
-id overlay
-=======
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 id packed
 id parallax
 id parent
@@ -1304,10 +1281,7 @@ id qtyProgressBar
 id qtyUpdateButton
 id qtyUpdateEditText
 id radio
-<<<<<<< HEAD
-=======
 id recycler_view
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 id right
 id right_icon
 id right_side
@@ -1362,6 +1336,7 @@ id submenuarrow
 id submit_area
 id tabMode
 id tab_layout
+id tabs
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -1393,20 +1368,15 @@ id up
 id updatePriceButton
 id updatePriceEditText
 id update_menuitem
-<<<<<<< HEAD
-id useLogo
-id usernameEditText
-id videoView
-=======
 id upload_chosen_file_imageview
 id upload_chosen_file_textview
 id useLogo
 id usernameEditText
 id videoView
 id view_files
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 id view_offset_helper
 id view_pager
+id viewpager
 id visible
 id wide
 id withText
@@ -1468,6 +1438,9 @@ layout activity_industry_home_screen
 layout activity_main
 layout activity_signin
 layout activity_signup
+layout activity_splash_screen
+layout customer_app_bar
+layout customer_content_main
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1482,24 +1455,18 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-<<<<<<< HEAD
 layout fragment_employee_home
 layout fragment_employee_req_product
-=======
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 layout fragment_farmer_add_product
 layout fragment_farmer_home
 layout fragment_farmer_my_order
 layout fragment_farmer_update
-<<<<<<< HEAD
 layout fragment_industry_add_product_fargment
 layout fragment_industry_home
 layout fragment_industry_my_order_fargment
 layout fragment_industry_update_fargment
 layout fragment_industry_update_fargment2
-=======
 layout individual_image_layout
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout navigation_header
@@ -1522,6 +1489,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu customer_main_drawer
 menu farmer_bottom_navigation
 menu menu_items_farmer
 mipmap ic_launcher
@@ -1599,8 +1567,15 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
+string help_support
 string hide_bottom_view_on_scroll_behavior
+string item_5
 string mtrl_chip_close_icon_content_description
+string my_account
+string my_cart
+string my_orders
+string my_profile
+string my_wishlist
 string open
 string password_toggle_content_description
 string path_password_eye

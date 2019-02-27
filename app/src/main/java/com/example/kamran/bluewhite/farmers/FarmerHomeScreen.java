@@ -115,7 +115,10 @@ public class FarmerHomeScreen extends AppCompatActivity
 
         drawerClose();
 
-        switch(menuItem.getItemId()) {
+        switch(menuItem.getItemId())
+        {
+
+
 
             case R.id.menu_logout:
                 mAuth.signOut();

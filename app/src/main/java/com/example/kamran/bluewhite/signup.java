@@ -231,7 +231,6 @@ public class signup extends AppCompatActivity
                     Toast.makeText(signup.this,"Signup UnSuccessful",Toast.LENGTH_SHORT);
 
                 }
-
             }
         });
     }

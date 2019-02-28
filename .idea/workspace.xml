@@ -6,12 +6,10 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-<<<<<<< HEAD
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c860579-f385-46fb-8fca-c75e8e9f2169" name="Default Changelist" comment="" />
-=======
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -137,7 +135,6 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_farmer_add_product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_farmer_add_product.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DocPoint" beforeDir="false" afterPath="$PROJECT_DIR$/../DocPoint" afterDir="false" />
     </list>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,9 +144,8 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-<<<<<<< HEAD
+
         <projects_view />
-=======
         <task path="$PROJECT_DIR$/app">
           <activation />
         </task>
@@ -182,19 +178,16 @@
             <select />
           </tree_state>
         </projects_view>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
       </state>
     </system>
   </component>
   <component name="FUSProjectUsageTrigger">
-<<<<<<< HEAD
     <session id="1804817183">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
-=======
     <session id="-537277272">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
@@ -205,68 +198,58 @@
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.opened" value="5" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-<<<<<<< HEAD
+
           <entry key="java" value="26" />
           <entry key="xml" value="16" />
-=======
           <entry key="bat" value="1" />
           <entry key="gradle" value="7" />
           <entry key="gradlew" value="2" />
           <entry key="java" value="65" />
           <entry key="json" value="1" />
           <entry key="xml" value="104" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-<<<<<<< HEAD
           <entry key="JAVA" value="26" />
           <entry key="XML" value="16" />
-=======
           <entry key="Groovy" value="7" />
           <entry key="JAVA" value="65" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="104" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-<<<<<<< HEAD
+
           <entry key="java" value="255" />
           <entry key="xml" value="265" />
-=======
+
           <entry key="gradle" value="24" />
           <entry key="java" value="5979" />
           <entry key="txt" value="11" />
           <entry key="xml" value="1467" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-<<<<<<< HEAD
+
           <entry key="JAVA" value="255" />
           <entry key="XML" value="265" />
-=======
           <entry key="Groovy" value="24" />
           <entry key="JAVA" value="5979" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="XML" value="1467" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/farmers/FarmerHomeScreen.java">
@@ -373,21 +356,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/Employee/EmployeeHomeScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
+
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-<<<<<<< HEAD
+
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -405,7 +387,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_employee_home.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/Employee/SectionsPagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/Employee/EmployeeHomeScreen.java" />
-=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -477,18 +458,15 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/individual_image_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/farmers/FarmerAddProductFragment.java" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
     <option name="x" value="420" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-=======
     <option name="x" value="-8" />
     <option name="width" value="1933" />
     <option name="height" value="1038" />
@@ -496,15 +474,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
       <pane id="PackagesPane" />
-=======
+
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -640,18 +616,15 @@
           <select />
         </subPane>
       </pane>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-<<<<<<< HEAD
               <item name="Sih-Project-master" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
               <item name="Sih-Project-master" type="1abcf292:AndroidViewProjectNode" />
-=======
               <item name="Blue_White" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
@@ -662,33 +635,29 @@
             </path>
             <path>
               <item name="Blue_White" type="1abcf292:AndroidViewProjectNode" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-<<<<<<< HEAD
               <item name="Sih-Project-master" type="1abcf292:AndroidViewProjectNode" />
-=======
+
               <item name="Blue_White" type="1abcf292:AndroidViewProjectNode" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="bluewhite" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
-<<<<<<< HEAD
-              <item name="Sih-Project-master" type="1abcf292:AndroidViewProjectNode" />
-=======
+           <item name="Sih-Project-master" type="1abcf292:AndroidViewProjectNode" />
+
               <item name="Blue_White" type="1abcf292:AndroidViewProjectNode" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
+
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="bluewhite" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="Employee" type="462c0819:PsiDirectoryNode" />
             </path>
-<<<<<<< HEAD
-=======
+
+
             <path>
               <item name="Blue_White" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
@@ -722,21 +691,16 @@
               <item name="Blue_White" type="58d84e3e:PackageViewProjectNode" />
               <item name="app" type="616d4139:PackageViewModuleNode" />
             </path>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
       <pane id="ProjectPane" />
       <pane id="Scope" />
-=======
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-<<<<<<< HEAD
     <property name="device.picker.selection" value="EIFY5LZPLFE6CUYS" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -745,7 +709,6 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.kamran.bluewhite.Employee" />
       <recent name="com.example.kamran.bluewhite.industry" />
-=======
     <property name="device.picker.selection" value="2e33c6a77d34" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DocPointAdmin" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
@@ -767,7 +730,6 @@
       <recent name="C:\Users\SUJIT\AndroidStudioProjects\Blue_White\app\src\main\res\layout" />
       <recent name="C:\Users\SUJIT\AndroidStudioProjects\Blue_White\app\src\main\res\menu" />
       <recent name="C:\Users\SUJIT\AndroidStudioProjects\Blue_White\app\src\main\java\com\example\kamran\bluewhite\farmers" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
     </key>
   </component>
   <component name="RunDashboard">
@@ -782,9 +744,7 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
   <component name="RunManager">
-=======
   <component name="RunManager" selected="Android App.app">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -804,15 +764,14 @@
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
+
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-=======
+
     <configuration name="Unnamed" type="AndroidRunConfigurationType" factoryName="Android App">
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -865,7 +824,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
@@ -919,8 +877,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-=======
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -963,31 +919,26 @@
         <item itemvalue="Gradle.C:/Users/SUJIT/AndroidStudioProjects/Blue_White/app [signingReport]" />
       </list>
     </recent_temporary>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
       <changelist id="3c860579-f385-46fb-8fca-c75e8e9f2169" name="Default Changelist" comment="" />
       <created>1551172113782</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551172113782</updated>
-=======
       <changelist id="474bc0e2-73ad-476d-a145-f253f741a775" name="Default Changelist" comment="" />
       <created>1550941011398</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550941011398</updated>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -1015,7 +966,6 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
-=======
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -1041,14 +991,12 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Preview" order="4" weight="0.20469798" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_industry_home.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
@@ -1096,7 +1044,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-=======
+
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/HelpCenter.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1155,14 +1103,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/industry/IndustryAddProductFargment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -1216,7 +1162,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2909#3088#0" expanded="true" />
             <element signature="e#3087#3088#0" expanded="true" />
-=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1279,18 +1224,15 @@
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_employee_home_screen.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119">
           <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1310,17 +1252,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_items_farmer.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="357">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-=======
         <state relative-caret-position="119">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
@@ -1331,14 +1270,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_farmer_home_screen.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+
         <state relative-caret-position="-136">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
@@ -1360,7 +1298,6 @@
             <element signature="e#2844#2845#0" expanded="true" />
             <element signature="e#2886#3140#0" expanded="true" />
             <element signature="e#3139#3140#0" expanded="true" />
-=======
         <state relative-caret-position="261">
           <caret line="32" column="83" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
         </state>
@@ -1429,12 +1366,10 @@
           <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
           <folding>
             <element signature="e#1368#1401#0" expanded="true" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_employee_home.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1458,7 +1393,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
             <element signature="e#652#653#0" expanded="true" />
-=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1530,12 +1464,10 @@
             <element signature="e#5532#8309#0" expanded="true" />
             <element signature="e#8308#8309#0" expanded="true" />
             <element signature="e#8602#8603#0" expanded="true" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/Employee/EmployeeHomeScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1546,7 +1478,6 @@
             <element signature="e#3304#3305#0" expanded="true" />
             <element signature="e#3399#3412#0" expanded="true" />
             <element signature="e#3413#3427#0" expanded="true" />
-=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/farmers/FarmerMyOrderFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1639,13 +1570,10 @@
           <caret line="317" column="51" selection-start-line="317" selection-start-column="51" selection-end-line="317" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/kamran/bluewhite/Employee/EmployeeHomeScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1669,6 +1597,5 @@
         </settings>
       </state>
     </states>
->>>>>>> 3a8f98cd34f9a7c30123f92f99b70f13eee5cd3a
   </component>
 </project>

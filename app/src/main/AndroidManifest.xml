@@ -21,6 +21,13 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MoneyTransferActivity"></activity>
         <activity android:name=".industry.ViewPhotosActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Employee.EmployeeHomeScreen" />
         <activity android:name=".customer.CustomerHomeScreen" />
         <activity android:name=".industry.IndustryHomeScreen" />

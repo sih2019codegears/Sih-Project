@@ -36,6 +36,7 @@
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="420dp"
+            android:outlineAmbientShadowColor="#03A9F4"
             android:visibility="invisible"/>
         <LinearLayout
             android:layout_width="match_parent"

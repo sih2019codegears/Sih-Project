@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:title="@string/my_profile"
+        android:checkableBehavior="single">
+        <menu>
+            <item
+                android:id="@+id/my_orders"
+
+                android:title="@string/my_orders" />
+            <item
+                android:id="@+id/my_cart"
+
+                android:title="@string/my_cart" />
+            <item
+                android:id="@+id/my_wishlist"
+
+                android:title="@string/my_wishlist" />
+            <item
+                android:id="@+id/my_account"
+
+                android:title="@string/my_account" />
+        </menu>
+    </item>
+
+    <item android:title="@string/help_support">
+        <menu>
+            <item
+                android:id="@+id/menu_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/menu_developers"
+                android:title="Developers" />
+            <item
+                android:id="@+id/menu_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

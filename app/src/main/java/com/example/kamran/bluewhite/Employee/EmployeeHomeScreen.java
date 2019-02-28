@@ -18,8 +18,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.kamran.bluewhite.R;
-import com.example.kamran.bluewhite.farmers.FarmerHomeScreen;
-import com.example.kamran.bluewhite.farmers.SectionsPagerAdapter;
 import com.example.kamran.bluewhite.main;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -133,3 +131,4 @@ public class EmployeeHomeScreen extends AppCompatActivity
 
     }
 }
+

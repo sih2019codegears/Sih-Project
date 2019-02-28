@@ -84,6 +84,7 @@ public class signup extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 mProgressBar.setVisibility(View.VISIBLE);
+                Log.i("signup button","clicked");
              verify();
 
 
